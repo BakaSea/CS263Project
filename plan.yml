@@ -1,0 +1,23 @@
+- id: throw
+  options:
+    exception: explicit
+    algorithm: intra
+- id: cfg
+  options:
+    exception: explicit
+    dump: true
+- id: const-prop
+  options:
+    edge-refine: false
+- id: live-var
+  options:
+    strongly: false
+- id: dead-code
+- id: process-result
+  options:
+    analyses:
+      - live-var
+      - constprop
+      - dead-code
+    action: dump
+    log-mismatches: false

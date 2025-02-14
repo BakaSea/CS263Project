@@ -11,7 +11,7 @@ public class Application {
     public static void main(String args[]) {
         if (args.length > 0) {
             List<String> argList = new ArrayList<>();
-            Collections.addAll(argList, "-pp", "-p", "plan.yml");
+            Collections.addAll(argList, "-java", "8", "-p", "plan.yml");
             Collections.addAll(argList, args);
             Main.main(argList.toArray(new String[0]));
         } else {
