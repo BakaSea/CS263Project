@@ -1,0 +1,4 @@
+- description: custom def-use analysis
+  analysisClass: moe.seaform.cs263.analysis.CustomDefUseAnalysis
+  id: custom-def-use
+  requires: [ reach-def ]

@@ -13,11 +13,14 @@
   options:
     strongly: false
 - id: dead-code
+- id: reach-def
+- id: custom-def-use
 - id: process-result
   options:
     analyses:
       - live-var
       - constprop
       - dead-code
+      - custom-def-use
     action: dump
     log-mismatches: false
