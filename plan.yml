@@ -12,13 +12,14 @@
 - id: live-var
   options:
     strongly: false
+- id: custom-live-var
 - id: dead-code
 - id: reach-def
 - id: custom-def-use
 - id: process-result
   options:
     analyses:
-      - live-var
+      - custom-live-var
       - constprop
       - dead-code
       - custom-def-use
