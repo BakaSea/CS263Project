@@ -13,15 +13,14 @@
   options:
     strongly: false
 - id: custom-live-var
+- id: custom-const-prop
 - id: dead-code
 - id: reach-def
 - id: custom-def-use
 - id: process-result
   options:
     analyses:
-      - custom-live-var
-      - constprop
-      - dead-code
-      - custom-def-use
+      - custom-const-prop
+      - const-prop
     action: dump
     log-mismatches: false

@@ -6,3 +6,7 @@
   analysisClass: moe.seaform.cs263.analysis.CustomLiveVariableAnalysis
   id: custom-live-var
   requires: [ cfg ]
+- description: custom constant propagation analysis
+  analysisClass: moe.seaform.cs263.analysis.CustomConstantPropagationAnalysis
+  id: custom-const-prop
+  requires: [ cfg ]
