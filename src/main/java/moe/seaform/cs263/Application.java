@@ -34,7 +34,7 @@ public class Application {
         }
     }
 
-    private static void run(String... args) {
+    public static void run(String... args) {
         Timer.runAndCount(() -> {
             Options options = processArgs(args);
             LoggerConfigs.setOutput(options.getOutputDir());

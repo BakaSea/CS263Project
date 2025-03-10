@@ -1,7 +1,6 @@
 package moe.seaform.cs263.analysis;
 
 import pascal.taie.analysis.dataflow.analysis.AbstractDataflowAnalysis;
-import pascal.taie.analysis.dataflow.analysis.AnalysisDriver;
 import pascal.taie.analysis.dataflow.analysis.DataflowAnalysis;
 import pascal.taie.analysis.dataflow.fact.SetFact;
 import pascal.taie.analysis.graph.cfg.CFG;
@@ -14,7 +13,7 @@ import pascal.taie.ir.stmt.Stmt;
 import java.util.Optional;
 import java.util.Set;
 
-public class CustomLiveVariableAnalysis extends AnalysisDriver<Stmt, SetFact<Var>> {
+public class CustomLiveVariableAnalysis extends AbstractCustomDataflowAnalysis<Stmt, SetFact<Var>> {
 
     public static final String ID = "custom-live-var";
 

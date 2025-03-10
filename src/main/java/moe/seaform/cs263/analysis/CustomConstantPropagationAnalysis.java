@@ -1,7 +1,6 @@
 package moe.seaform.cs263.analysis;
 
 import pascal.taie.analysis.dataflow.analysis.AbstractDataflowAnalysis;
-import pascal.taie.analysis.dataflow.analysis.AnalysisDriver;
 import pascal.taie.analysis.dataflow.analysis.DataflowAnalysis;
 import pascal.taie.analysis.dataflow.analysis.constprop.CPFact;
 import pascal.taie.analysis.dataflow.analysis.constprop.Value;
@@ -11,7 +10,7 @@ import pascal.taie.ir.exp.*;
 import pascal.taie.ir.stmt.DefinitionStmt;
 import pascal.taie.ir.stmt.Stmt;
 
-public class CustomConstantPropagationAnalysis extends AnalysisDriver<Stmt, CPFact> {
+public class CustomConstantPropagationAnalysis extends AbstractCustomDataflowAnalysis<Stmt, CPFact> {
 
     public static final String ID = "custom-const-prop";
 

@@ -10,3 +10,7 @@
   analysisClass: moe.seaform.cs263.analysis.CustomConstantPropagationAnalysis
   id: custom-const-prop
   requires: [ cfg ]
+- description: custom dead code analysis
+  analysisClass : moe.seaform.cs263.analysis.CustomDeadCodeAnalysis
+  id: custom-dead-code
+  requires: [ cfg, custom-const-prop, custom-live-var ]
