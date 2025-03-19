@@ -6,21 +6,15 @@
   options:
     exception: explicit
     dump: true
-- id: const-prop
-  options:
-    edge-refine: false
-- id: live-var
-  options:
-    strongly: false
 - id: custom-live-var
 - id: custom-const-prop
-- id: dead-code
 - id: custom-dead-code
 - id: ir-dumper
 - id: process-result
   options:
     analyses:
+      - custom-live-var
+      - custom-const-prop
       - custom-dead-code
-      - dead-code
     action: dump
     log-mismatches: false
